@@ -5,9 +5,73 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color:dodgerblue;
+  height: 100vh;
+}
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#container{
+  background-color: white;
+  color: dodgerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2%;
+  width: 40%;
+  border-radius: 4px;
+}
+input{
+  width: 70%;
+  margin: 0% 8% 2% 5%;
+  font-size: 16px;
+  padding: 1%;
+}
+#quote{
+  width: 80%;
+  font-size: 30px;
+}
+#author{
+  width: 90%;
+  text-align: end;
+  padding-right: 2%;
+  font-size: 22px;
+}
+
+#nextquote,#addquote{
+  border: 2px solid dodgerblue;
+  background-color: dodgerblue;
+  color: white;
+  font-size: 20px;
+  border-radius: 4px;
+  margin-top: 2%;
+  padding: 1%;
+}
+#nextquote:hover , #addquote:hover{
+  cursor: pointer;
+}
+
+
+.quotedisplay, .addnewquote {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2%;
+}
+
+.addnewquote{
+  justify-content: flex-start;
+}
+
+#addquote{
+  margin-left: 5%;
 }
