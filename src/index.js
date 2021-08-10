@@ -43,7 +43,6 @@ export default class AddQuote extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return {
     quotes: state.mainQuotes,
     index: state.index,
